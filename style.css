@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+  background: #004080;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+.menu li a:hover {
+  background: #0066cc;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  min-width: 200px;
+  top: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-radius: 6px;
+}
+
+.dropdown-content li a {
+  color: #000;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/7/70/India_Gate_in_New_Delhi_03-2016_img3.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
