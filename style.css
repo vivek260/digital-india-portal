@@ -30,6 +30,7 @@ header {
   color: #fff;
   padding: 8px 12px;
   transition: background 0.3s ease;
+  z-index: 9999;
 }
 
 .menu li a:hover {
@@ -47,27 +48,32 @@ header {
   background: #fff;
   color: #000;
   min-width: 200px;
-  top: 40px;
+  top: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   border-radius: 6px;
+  overflow: hidden;
+  padding: 0;
 }
 
 .dropdown-content li a {
   color: #000;
-  padding: 10px;
+  padding: 10px 15px;
   display: block;
+  text-decoration: none;
+  background: #fff;
 }
 
 .dropdown-content li a:hover {
   background: #f0f0f0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,.dropdown-content:hover {
   display: block;
+  z-index: 99999;
 }
 
 .hero {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/7/70/India_Gate_in_New_Delhi_03-2016_img3.jpg') center/cover no-repeat;
+  background: url('assets/national-portal.jpg') center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
